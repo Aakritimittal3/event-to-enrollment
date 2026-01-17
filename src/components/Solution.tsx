@@ -1,11 +1,11 @@
-import { Check, ArrowRight, Database, Mail, BarChart3, Settings } from "lucide-react";
+import { Check, ArrowRight, Shield, FileCheck, BarChart3, Clock } from "lucide-react";
 
 const solutions = [
-  { icon: Database, label: "CRM systems" },
-  { icon: Mail, label: "Automated email & WhatsApp campaigns" },
-  { icon: Settings, label: "Event-to-enrollment funnels" },
-  { icon: BarChart3, label: "Analytics dashboards" },
-  { icon: Check, label: "Conversion optimization" },
+  { icon: FileCheck, label: "Comprehensive compliance audits" },
+  { icon: Shield, label: "Statutory filing & documentation" },
+  { icon: Clock, label: "Compliance calendar & reminders" },
+  { icon: BarChart3, label: "Real-time compliance dashboards" },
+  { icon: Check, label: "Monthly reporting & reviews" },
 ];
 
 const Solution = () => {
@@ -18,21 +18,21 @@ const Solution = () => {
             The Solution
           </div>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-            End-to-End Conversion Systems That Work
+            Your Complete Compliance Partner
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
-            I build systems that turn:
+            We build end-to-end compliance systems that transform chaos into clarity:
           </p>
           
           {/* Flow visualization */}
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-lg md:text-xl font-display font-semibold text-foreground mb-8">
-            <span>Leads</span>
+            <span>Assessment</span>
             <ArrowRight className="w-5 h-5 text-accent" />
-            <span>Conversations</span>
+            <span>Implementation</span>
             <ArrowRight className="w-5 h-5 text-accent" />
-            <span>Enrollments</span>
+            <span>Monitoring</span>
             <ArrowRight className="w-5 h-5 text-accent" />
-            <span className="text-accent">Revenue</span>
+            <span className="text-accent">Compliance</span>
           </div>
         </div>
 

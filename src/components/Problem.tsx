@@ -1,11 +1,12 @@
 import { X, AlertTriangle } from "lucide-react";
 
 const problems = [
-  "Leads come in but aren't followed up properly",
-  "Events end without enrollments or conversions",
-  "No CRM or visibility into what's working",
-  "Counselors & teams work manually",
-  "Revenue depends too much on individuals",
+  "Struggling to keep up with changing regulations and deadlines",
+  "Facing penalties and notices due to compliance gaps",
+  "No dedicated team to manage statutory requirements",
+  "Lack of visibility into compliance status across departments",
+  "Documentation scattered and audit-readiness is poor",
+  "Wasting time and money on reactive firefighting",
 ];
 
 const Problem = () => {
@@ -17,10 +18,10 @@ const Problem = () => {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-destructive/10 text-destructive text-sm font-medium mb-6">
               <AlertTriangle className="w-4 h-4" />
-              The Problem
+              The Compliance Challenge
             </div>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Most Education Institutes & Event Organizers Face the Same Issues
+              Is Regulatory Complexity Putting Your Business at Risk?
             </h2>
             <div className="space-y-4">
               {problems.map((problem) => (
@@ -39,19 +40,29 @@ const Problem = () => {
           <div className="relative">
             <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-destructive/10 mb-6">
-                  <span className="font-display text-4xl font-bold text-destructive">
-                    30-50%
+                <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-destructive/10 mb-6">
+                  <span className="font-display text-3xl font-bold text-destructive">
+                    ₹50L+
                   </span>
                 </div>
                 <h3 className="font-display text-2xl font-bold text-foreground mb-4">
-                  Potential Revenue Lost
+                  Average Penalty Exposure
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Without proper systems in place, education institutes and
-                  event organizers lose nearly half of their potential revenue
-                  due to poor follow-ups and manual processes.
+                  Non-compliance can lead to heavy penalties, legal battles,
+                  reputation damage, and operational disruptions that cost
+                  businesses lakhs every year.
                 </p>
+              </div>
+              <div className="mt-8 pt-6 border-t border-border grid grid-cols-2 gap-4 text-center">
+                <div>
+                  <div className="text-2xl font-bold text-foreground">70%</div>
+                  <div className="text-xs text-muted-foreground">SMEs face compliance issues</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-foreground">40+</div>
+                  <div className="text-xs text-muted-foreground">Laws to track per business</div>
+                </div>
               </div>
             </div>
             {/* Decorative elements */}

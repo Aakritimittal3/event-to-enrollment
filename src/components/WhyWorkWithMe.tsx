@@ -1,53 +1,56 @@
-import { Check, Clock, Users, Handshake, Settings2 } from "lucide-react";
+import { Award, Users, Clock, Handshake, BookOpen, HeartHandshake } from "lucide-react";
 
 const reasons = [
   {
-    icon: Clock,
-    title: "10+ Years Experience",
-    description: "Deep expertise in marketing, campaigns, databases & events",
+    icon: Award,
+    title: "15+ Years Experience",
+    description: "Deep expertise in statutory and regulatory compliance across industries",
   },
   {
     icon: Users,
-    title: "Education & Community Specialist",
-    description: "Focused on education-driven and community-based growth",
+    title: "Dedicated Team",
+    description: "Expert compliance professionals assigned to your account",
   },
   {
-    icon: Check,
-    title: "No Long Contracts",
-    description: "Flexible monthly retainers — stay because it works",
+    icon: Clock,
+    title: "Proactive Approach",
+    description: "We track deadlines and act before issues arise, not after",
+  },
+  {
+    icon: BookOpen,
+    title: "Industry Knowledge",
+    description: "Specialists in manufacturing, IT, retail, and service sectors",
   },
   {
     icon: Handshake,
-    title: "Partner-First Mindset",
-    description: "I grow when you grow — true alignment of interests",
+    title: "Flexible Engagement",
+    description: "No long contracts — monthly retainers that work for you",
   },
   {
-    icon: Settings2,
-    title: "Systems Over Manpower",
-    description: "Scalable automation beats manual labor every time",
+    icon: HeartHandshake,
+    title: "Partner Mindset",
+    description: "We succeed when you stay compliant and grow worry-free",
   },
 ];
 
 const WhyWorkWithMe = () => {
   return (
     <section className="section-padding bg-background">
-      <div className="container-narrow">
+      <div className="container-wide">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Why Work With Me
+            Why Choose Ecore Compliance
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A decade of experience, focused entirely on helping you grow
+            Your trusted partner for stress-free regulatory compliance
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reasons.map((reason, index) => (
+          {reasons.map((reason) => (
             <div
               key={reason.title}
-              className={`p-6 rounded-xl border border-border bg-card hover:shadow-md transition-all duration-300 ${
-                index === 4 ? "lg:col-start-2" : ""
-              }`}
+              className="p-6 rounded-xl border border-border bg-card hover:shadow-md hover:border-accent/30 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <reason.icon className="w-6 h-6 text-accent" />

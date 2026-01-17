@@ -1,25 +1,29 @@
-import { TrendingUp, Target, Zap, Eye } from "lucide-react";
+import { Shield, TrendingUp, Clock, Award } from "lucide-react";
 
 const results = [
   {
+    icon: Shield,
+    stat: "100%",
+    label: "Compliance Rate",
+    description: "Clients achieve full statutory compliance",
+  },
+  {
     icon: TrendingUp,
-    stat: "25-60%",
-    label: "Improvement in lead-to-enrollment conversions",
+    stat: "₹0",
+    label: "Penalties",
+    description: "Zero penalties for managed clients",
   },
   {
-    icon: Target,
-    stat: "2-3×",
-    label: "Better ROI from events",
+    icon: Clock,
+    stat: "90%",
+    label: "Time Saved",
+    description: "Reduction in compliance management effort",
   },
   {
-    icon: Zap,
-    stat: "Faster",
-    label: "Follow-ups & better counselor productivity",
-  },
-  {
-    icon: Eye,
-    stat: "Clear",
-    label: "Visibility into revenue pipelines",
+    icon: Award,
+    stat: "100%",
+    label: "Audit Success",
+    description: "Perfect record in government inspections",
   },
 ];
 
@@ -43,7 +47,7 @@ const Results = () => {
             Results You Can Expect
           </h2>
           <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto">
-            Clients typically see significant improvements across all metrics
+            Our clients experience peace of mind and measurable compliance improvements
           </p>
         </div>
 
@@ -59,8 +63,9 @@ const Results = () => {
               <div className="font-display text-3xl md:text-4xl font-bold text-accent mb-2">
                 {result.stat}
               </div>
+              <div className="text-lg font-semibold mb-1">{result.label}</div>
               <p className="text-sm text-primary-foreground/70 leading-relaxed">
-                {result.label}
+                {result.description}
               </p>
             </div>
           ))}

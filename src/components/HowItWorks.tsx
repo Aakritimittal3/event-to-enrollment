@@ -1,26 +1,26 @@
-import { Search, Settings, TrendingUp } from "lucide-react";
+import { ClipboardCheck, Settings, TrendingUp } from "lucide-react";
 
 const steps = [
   {
-    icon: Search,
+    icon: ClipboardCheck,
     step: "Step 1",
-    title: "Free Growth Audit",
-    description: "We review your current lead flow, follow-up process, CRM systems, and event conversion journey.",
-    items: ["Lead flow analysis", "Follow-up process review", "CRM assessment", "Event conversion audit"],
+    title: "Free Compliance Audit",
+    description: "We thoroughly assess your current compliance status and identify gaps.",
+    items: ["Review existing licenses", "Identify compliance gaps", "Assess penalty exposure", "Documentation review"],
   },
   {
     icon: Settings,
     step: "Step 2",
-    title: "System Design",
-    description: "I build your complete conversion infrastructure tailored to your business needs.",
-    items: ["CRM pipelines", "Email + WhatsApp automation", "Conversion workflows", "Reporting dashboards"],
+    title: "System Implementation",
+    description: "We set up your complete compliance infrastructure and processes.",
+    items: ["Obtain missing licenses", "Create compliance calendar", "Set up filing workflows", "Establish documentation"],
   },
   {
     icon: TrendingUp,
     step: "Step 3",
-    title: "Monthly Growth Partner",
-    description: "I manage optimization, reporting, and continuous improvements on a monthly basis.",
-    items: ["Performance optimization", "Regular reporting", "Strategy adjustments", "Ongoing support"],
+    title: "Ongoing Management",
+    description: "We manage your compliance on a monthly basis with regular monitoring.",
+    items: ["Timely statutory filings", "Inspection support", "Monthly reporting", "Continuous optimization"],
   },
 ];
 
@@ -30,10 +30,10 @@ const HowItWorks = () => {
       <div className="container-wide">
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            How It Works
+            How We Work
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A simple, proven process to transform your lead conversion
+            A simple, proven process to achieve and maintain compliance
           </p>
         </div>
 

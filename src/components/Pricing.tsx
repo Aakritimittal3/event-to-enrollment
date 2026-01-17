@@ -1,46 +1,52 @@
 import { Button } from "@/components/ui/button";
-import { Check, Star, Flame } from "lucide-react";
+import { Check, Star, Shield } from "lucide-react";
 
 const packages = [
   {
-    name: "Education Growth Partner",
-    price: "₹1L–₹2L",
+    name: "Compliance Essentials",
+    price: "₹25K–₹50K",
     period: "/month",
-    description: "Complete lead conversion system for education institutes",
+    description: "For small businesses and startups",
     features: [
-      "CRM & database setup",
-      "Email + WhatsApp automation",
-      "Monthly campaigns",
-      "Lead conversion optimization",
-      "Performance dashboards",
+      "PF, ESI & PT compliance",
+      "GST filing support",
+      "Basic labour law compliance",
+      "Compliance calendar",
+      "Monthly status reports",
+      "Email & phone support",
     ],
     popular: false,
   },
   {
-    name: "Hybrid Growth Partner",
-    price: "₹1.5L–₹2.5L",
+    name: "Compliance Pro",
+    price: "₹50K–₹1L",
     period: "/month",
-    description: "Everything combined for maximum growth",
+    description: "For growing SMEs",
     features: [
-      "Everything in both packages",
-      "Events + ongoing leads",
-      "Community monetization funnels",
-      "Sponsorship-ready analytics",
-      "Priority support",
+      "Everything in Essentials",
+      "Complete labour law management",
+      "Environmental compliance",
+      "License renewals & management",
+      "Inspection support",
+      "Dedicated compliance manager",
+      "Quarterly compliance audits",
     ],
     popular: true,
   },
   {
-    name: "Event-to-Revenue Partner",
-    price: "₹75K–₹1.5L",
+    name: "Enterprise Compliance",
+    price: "₹1L–₹2.5L",
     period: "/month",
-    description: "Turn your events into consistent revenue streams",
+    description: "For large organizations",
     features: [
-      "Event funnel setup",
-      "Attendee nurture sequences",
-      "Post-event conversion systems",
-      "CRM integration",
-      "Monthly reporting",
+      "Everything in Pro",
+      "Multi-location compliance",
+      "Industry-specific regulations",
+      "Contract labour management",
+      "Vendor compliance audits",
+      "Real-time compliance dashboard",
+      "Board-level reporting",
+      "Priority 24/7 support",
     ],
     popular: false,
   },
@@ -52,15 +58,15 @@ const Pricing = () => {
       <div className="container-wide">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Simple & Clear Packages
+            Simple, Transparent Pricing
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the package that fits your needs — no long contracts, just results
+            Choose a plan that fits your business size and compliance needs
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {packages.map((pkg, index) => (
+          {packages.map((pkg) => (
             <div
               key={pkg.name}
               className={`relative bg-card rounded-2xl border overflow-hidden transition-all duration-300 hover:shadow-xl ${
@@ -80,7 +86,7 @@ const Pricing = () => {
 
               <div className={`p-8 ${pkg.popular ? "pt-14" : ""}`}>
                 <div className="flex items-center gap-2 mb-4">
-                  <Flame className="w-5 h-5 text-accent" />
+                  <Shield className="w-5 h-5 text-accent" />
                   <h3 className="font-display text-xl font-bold text-foreground">
                     {pkg.name}
                   </h3>
@@ -118,6 +124,14 @@ const Pricing = () => {
             </div>
           ))}
         </div>
+
+        <p className="text-center text-muted-foreground mt-12">
+          Need a custom solution?{" "}
+          <a href="#contact" className="text-accent hover:underline">
+            Contact us
+          </a>{" "}
+          for a tailored quote.
+        </p>
       </div>
     </section>
   );
