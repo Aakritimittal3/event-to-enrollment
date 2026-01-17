@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Shield } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,8 +32,9 @@ const Header = () => {
       <div className="container-wide flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
+          <Shield className="w-7 h-7 text-accent" />
           <span className="font-display text-xl font-bold text-foreground">
-            ECORE<span className="text-accent">MEDIA</span>
+            Ecore<span className="text-accent">Compliance</span>
           </span>
         </a>
 
@@ -53,7 +54,7 @@ const Header = () => {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Button variant="accent" size="lg" asChild>
-            <a href="#contact">Book Free Audit</a>
+            <a href="#contact">Free Compliance Audit</a>
           </Button>
         </div>
 
@@ -81,7 +82,7 @@ const Header = () => {
               </a>
             ))}
             <Button variant="accent" size="lg" className="mt-2" asChild>
-              <a href="#contact">Book Free Audit</a>
+              <a href="#contact">Free Compliance Audit</a>
             </Button>
           </nav>
         </div>

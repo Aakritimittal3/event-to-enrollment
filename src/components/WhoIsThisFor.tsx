@@ -1,25 +1,35 @@
-import { GraduationCap, Calendar, Building2, Award } from "lucide-react";
+import { Factory, Building2, Building, Briefcase, ShoppingBag, Truck } from "lucide-react";
 
 const audiences = [
   {
-    icon: GraduationCap,
-    title: "IELTS & Study Abroad Institutes",
-    description: "Convert inquiries into enrolled students systematically",
+    icon: Factory,
+    title: "Manufacturing Units",
+    description: "Factories needing labour, environmental, and safety compliance",
   },
   {
     icon: Building2,
-    title: "Coaching Centers & Colleges",
-    description: "Scale admissions with automated follow-up systems",
+    title: "IT & Service Companies",
+    description: "Tech firms requiring statutory and data protection compliance",
   },
   {
-    icon: Calendar,
-    title: "Event Organizers & Startup Communities",
-    description: "Turn event attendees into paying customers",
+    icon: Building,
+    title: "Real Estate & Construction",
+    description: "Builders managing RERA, environmental, and labour laws",
   },
   {
-    icon: Award,
-    title: "Training Academies & Education Brands",
-    description: "Build predictable revenue from your lead pipeline",
+    icon: Briefcase,
+    title: "SMEs & Startups",
+    description: "Growing businesses needing comprehensive compliance setup",
+  },
+  {
+    icon: ShoppingBag,
+    title: "Retail & Hospitality",
+    description: "Shops and hotels requiring FSSAI, labour, and local permits",
+  },
+  {
+    icon: Truck,
+    title: "Logistics & Trading",
+    description: "Import/export firms needing customs, GST, and trade compliance",
   },
 ];
 
@@ -29,15 +39,15 @@ const WhoIsThisFor = () => {
       <div className="container-wide">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Who This Is For
+            Who We Serve
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            If you run events or generate leads but struggle to convert them
-            consistently — this is for you.
+            If regulatory complexity is slowing your growth or exposing you to
+            risks — we're here to help.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {audiences.map((item, index) => (
             <div
               key={item.title}

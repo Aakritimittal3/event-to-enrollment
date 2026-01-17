@@ -1,17 +1,17 @@
 import { Button } from "@/components/ui/button";
-import { Target, Clock, Settings, TrendingUp, ArrowRight, Check } from "lucide-react";
+import { FileSearch, Shield, ClipboardCheck, AlertTriangle, ArrowRight, Check } from "lucide-react";
 
 const auditItems = [
-  { icon: Clock, label: "Your lead response time" },
-  { icon: Settings, label: "CRM setup" },
-  { icon: TrendingUp, label: "Event funnel performance" },
-  { icon: Target, label: "Follow-up systems" },
+  { icon: ClipboardCheck, label: "Existing licenses & registrations" },
+  { icon: Shield, label: "Compliance gap analysis" },
+  { icon: AlertTriangle, label: "Risk & penalty exposure" },
+  { icon: FileSearch, label: "Documentation review" },
 ];
 
 const deliverables = [
-  "A conversion roadmap",
-  "Missed revenue opportunities",
-  "Automation recommendations",
+  "Priority action roadmap",
+  "Missed compliance opportunities",
+  "Cost-saving recommendations",
 ];
 
 const FreeOffer = () => {
@@ -23,22 +23,22 @@ const FreeOffer = () => {
             {/* Left - Offer Details */}
             <div className="p-8 lg:p-12">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-6">
-                <Target className="w-4 h-4" />
+                <FileSearch className="w-4 h-4" />
                 Free Offer
               </div>
 
               <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Free Event & Lead Conversion Audit
+                Get Your Free Compliance Audit
               </h2>
 
               <p className="text-muted-foreground mb-6">
-                I'll analyze your current systems and show you exactly where you're
-                leaving money on the table.
+                Discover your compliance gaps, risk exposure, and get a clear
+                roadmap to full compliance — absolutely free.
               </p>
 
               <div className="mb-8">
                 <p className="text-sm font-medium text-foreground mb-4">
-                  I'll analyze:
+                  We'll analyze:
                 </p>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {auditItems.map((item) => (
@@ -71,15 +71,15 @@ const FreeOffer = () => {
             {/* Right - CTA */}
             <div className="bg-gradient-hero p-8 lg:p-12 flex flex-col justify-center items-center text-center">
               <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">
-                Ready to see what you're missing?
+                Ready for worry-free compliance?
               </h3>
               <p className="text-primary-foreground/70 mb-8 max-w-sm">
-                Book your free audit today and get a clear picture of your
-                conversion opportunities.
+                Book your free audit today and get complete visibility into your
+                compliance status.
               </p>
               <Button variant="hero" size="xl" asChild>
                 <a href="#contact">
-                  Book Your Free Audit
+                  Claim Your Free Audit
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>

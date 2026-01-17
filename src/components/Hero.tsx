@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Shield } from "lucide-react";
 
 const Hero = () => {
   const highlights = [
-    "CRM & Automation Setup",
-    "Email & WhatsApp Campaigns",
-    "Event-to-Enrollment Funnels",
+    "Statutory & Labour Compliance",
+    "GST & Tax Management",
+    "Regulatory Audits & Certifications",
   ];
 
   return (
@@ -28,21 +28,21 @@ const Hero = () => {
         <div className="max-w-3xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground/80 text-sm font-medium mb-6 animate-fade-up">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            Marketing Automation for Education & Events
+            <Shield className="w-4 h-4 text-accent" />
+            Trusted Compliance Partner
           </div>
 
           {/* Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
-            Turn Events & Leads Into Enrollments —{" "}
-            <span className="text-gradient">On Autopilot</span>
+            Navigate Regulations with{" "}
+            <span className="text-gradient">Confidence & Ease</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-primary-foreground/70 mb-8 leading-relaxed max-w-2xl animate-fade-up delay-200">
-            I help education institutes and community organizers in Punjab
-            convert event attendees and inquiries into predictable monthly
-            revenue using CRM, email, and WhatsApp automation.
+            We help businesses across India stay compliant with statutory,
+            regulatory, and industry-specific requirements through expert
+            consulting, audits, and management systems.
           </p>
 
           {/* Highlights */}
@@ -62,12 +62,12 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up delay-400">
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
-                Book a Free Growth Audit
+                Book Free Compliance Audit
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="#services">See How It Works</a>
+              <a href="#services">Explore Our Services</a>
             </Button>
           </div>
         </div>
