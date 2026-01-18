@@ -9,9 +9,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-2">
               <Shield className="w-6 h-6 text-accent" />
-              <span className="font-display text-xl font-bold">
-                Ecore<span className="text-accent">Compliance</span>
-              </span>
+            <span className="font-display text-xl font-bold">
+              Ecore<span className="text-accent">Advisory</span>
+            </span>
             </div>
             <p className="text-primary-foreground/60 text-sm mt-2">
               Your trusted partner for regulatory compliance across India
@@ -21,11 +21,11 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="flex flex-col gap-3 md:items-center">
             <a
-              href="mailto:info@ecorecompliance.com"
+              href="mailto:info@ecoreadvisory.com"
               className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
             >
               <Mail className="w-4 h-4" />
-              info@ecorecompliance.com
+              info@ecoreadvisory.com
             </a>
             <a
               href="tel:+919876543210"
@@ -45,7 +45,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-8 pt-8 text-center">
           <p className="text-sm text-primary-foreground/50">
-            © {new Date().getFullYear()} Ecore Compliance. All rights reserved.
+            © {new Date().getFullYear()} Ecore Advisory. All rights reserved.
           </p>
         </div>
       </div>
