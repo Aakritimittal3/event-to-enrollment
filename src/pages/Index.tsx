@@ -7,7 +7,6 @@ import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import AboutUs from "@/components/AboutUs";
 import Results from "@/components/Results";
-import Pricing from "@/components/Pricing";
 import FreeOffer from "@/components/FreeOffer";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -24,7 +23,6 @@ const Index = () => {
       <HowItWorks />
       <AboutUs />
       <Results />
-      <Pricing />
       <FreeOffer />
       <FinalCTA />
       <Footer />
