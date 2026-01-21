@@ -1,4 +1,4 @@
-import { Shield, Megaphone, Users, Palette, Mail, FileText, Leaf, Scale, Building2, Zap, Gauge, Briefcase, Check } from "lucide-react";
+import { Shield, Megaphone, Users, Palette, Mail, FileText, Leaf, Scale, Building2, Zap, Gauge, Briefcase, Check, Globe, Target } from "lucide-react";
 
 const complianceServices = [
   { name: "Labour Compliances", icon: Users },
@@ -16,6 +16,8 @@ const marketingServices = [
   { name: "IT Event Participation Support", icon: FileText },
   { name: "Professional B2B Content", icon: FileText },
   { name: "Email Marketing", icon: Mail },
+  { name: "Website Development", icon: Globe },
+  { name: "Lead Generation", icon: Target },
 ];
 
 const Services = () => {
