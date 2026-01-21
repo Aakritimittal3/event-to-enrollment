@@ -51,12 +51,6 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* CTA Button */}
-        <div className="hidden md:block">
-          <Button variant="accent" size="lg" asChild>
-            <a href="#contact">Free Compliance Audit</a>
-          </Button>
-        </div>
 
         {/* Mobile Menu Toggle */}
         <button
@@ -81,9 +75,6 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="accent" size="lg" className="mt-2" asChild>
-              <a href="#contact">Free Compliance Audit</a>
-            </Button>
           </nav>
         </div>
       )}
