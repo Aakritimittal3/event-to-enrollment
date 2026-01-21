@@ -34,7 +34,7 @@ const Header = () => {
         <a href="#" className="flex items-center gap-2">
           <Shield className="w-7 h-7 text-accent" />
           <span className="font-display text-xl font-bold text-foreground">
-            Ecore<span className="text-accent">Advisory</span>
+            <span className="text-accent">Ecore</span>Advisory
           </span>
         </a>
 
