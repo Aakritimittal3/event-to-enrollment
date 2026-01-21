@@ -33,8 +33,8 @@ const Header = () => {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <Shield className="w-7 h-7 text-accent" />
-          <span className="font-display text-xl font-bold text-foreground">
-            <span className="text-accent">Ecore</span>Advisory
+          <span className="font-display text-xl font-bold text-accent">
+            Ecore Advisory
           </span>
         </a>
 
