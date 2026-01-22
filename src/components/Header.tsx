@@ -17,7 +17,6 @@ const Header = () => {
   const navLinks = [
     { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Process", href: "#process" },
     { label: "Results", href: "#results" },
   ];
 
@@ -38,8 +37,8 @@ const Header = () => {
           </span>
         </a>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        {/* Desktop Navigation - Centered */}
+        <nav className="hidden md:flex items-center justify-center flex-1 gap-8">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -50,6 +49,9 @@ const Header = () => {
             </a>
           ))}
         </nav>
+
+        {/* Spacer for balance */}
+        <div className="hidden md:block w-[140px]" />
 
 
         {/* Mobile Menu Toggle */}

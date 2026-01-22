@@ -31,6 +31,11 @@ const audiences = [
     title: "Logistics & Trading",
     description: "Import/export firms needing customs, GST, and trade compliance",
   },
+  {
+    icon: ShoppingBag,
+    title: "E-commerce",
+    description: "Online businesses needing consumer protection, data privacy, and marketplace compliance",
+  },
 ];
 
 const WhoIsThisFor = () => {

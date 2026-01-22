@@ -4,7 +4,6 @@ import WhoIsThisFor from "@/components/WhoIsThisFor";
 import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import Services from "@/components/Services";
-import HowItWorks from "@/components/HowItWorks";
 import AboutUs from "@/components/AboutUs";
 import Results from "@/components/Results";
 import FreeOffer from "@/components/FreeOffer";
@@ -20,7 +19,6 @@ const Index = () => {
       <Problem />
       <Solution />
       <Services />
-      <HowItWorks />
       <AboutUs />
       <Results />
       <FreeOffer />
