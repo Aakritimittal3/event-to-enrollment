@@ -4,7 +4,6 @@ import { ArrowRight, CheckCircle2, Shield } from "lucide-react";
 const Hero = () => {
   const highlights = [
     "Statutory & Labour Compliance",
-    "GST & Tax Management",
     "Regulatory Audits & Certifications",
   ];
 
@@ -29,7 +28,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground/80 text-sm font-medium mb-6 animate-fade-up">
             <Shield className="w-4 h-4 text-accent" />
-            Trusted Compliance Partner
+            Trusted Business Partner
           </div>
 
           {/* Headline */}
