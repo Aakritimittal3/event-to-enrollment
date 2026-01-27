@@ -28,9 +28,9 @@ const FinalCTA = () => {
             </a>
           </Button>
           <Button variant="outline" size="xl" className="border-2" asChild>
-            <a href="tel:+919876543210">
+            <a href="tel:+917404775788">
               <Phone className="w-5 h-5" />
-              Call: +91-98765-43210
+              Call: +91-7404775788
             </a>
           </Button>
         </div>
