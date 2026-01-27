@@ -1,17 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Shield, Megaphone } from "lucide-react";
+import { ArrowRight, Shield } from "lucide-react";
 
 const Hero = () => {
-  const complianceHighlights = [
-    "Statutory & Labour Compliance",
-    "Regulatory Audits & Certifications",
-  ];
-
-  const marketingHighlights = [
-    "B2B Branding & Content",
-    "Lead Generation & Email Marketing",
-  ];
-
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
       {/* Subtle pattern overlay */}
@@ -49,41 +39,6 @@ const Hero = () => {
             without worrying about legal risks.
           </p>
 
-          {/* Highlights - Two columns */}
-          <div className="grid sm:grid-cols-2 gap-6 mb-10 animate-fade-up delay-300">
-            {/* Compliance */}
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-accent mb-3">
-                <Shield className="w-4 h-4" />
-                <span className="text-sm font-semibold uppercase tracking-wide">Compliance</span>
-              </div>
-              {complianceHighlights.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-2 text-primary-foreground/80"
-                >
-                  <CheckCircle2 className="w-4 h-4 text-accent" />
-                  <span className="text-sm">{item}</span>
-                </div>
-              ))}
-            </div>
-            {/* Marketing */}
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-highlight mb-3">
-                <Megaphone className="w-4 h-4" />
-                <span className="text-sm font-semibold uppercase tracking-wide">Marketing</span>
-              </div>
-              {marketingHighlights.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-2 text-primary-foreground/80"
-                >
-                  <CheckCircle2 className="w-4 h-4 text-highlight" />
-                  <span className="text-sm">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up delay-400">
