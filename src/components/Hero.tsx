@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Shield } from "lucide-react";
+import { ArrowRight, CheckCircle2, Shield, Megaphone } from "lucide-react";
 
 const Hero = () => {
-  const highlights = [
+  const complianceHighlights = [
     "Statutory & Labour Compliance",
     "Regulatory Audits & Certifications",
+  ];
+
+  const marketingHighlights = [
+    "B2B Branding & Content",
+    "Lead Generation & Email Marketing",
   ];
 
   return (
@@ -33,28 +38,51 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
-            Navigate Regulations with{" "}
-            <span className="text-gradient">Confidence & Ease</span>
+            Grow with Confidence,{" "}
+            <span className="text-gradient">Stay Compliant</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-primary-foreground/70 mb-8 leading-relaxed max-w-2xl animate-fade-up delay-200">
-            We help businesses across India stay compliant with statutory,
-            regulatory, and industry-specific requirements through expert
-            consulting, audits, and management systems.
+            We help SMEs across India scale their business through strategic marketing 
+            while ensuring complete regulatory compliance—so you can focus on growth 
+            without worrying about legal risks.
           </p>
 
-          {/* Highlights */}
-          <div className="flex flex-wrap gap-4 mb-10 animate-fade-up delay-300">
-            {highlights.map((item) => (
-              <div
-                key={item}
-                className="flex items-center gap-2 text-primary-foreground/80"
-              >
-                <CheckCircle2 className="w-5 h-5 text-accent" />
-                <span className="text-sm font-medium">{item}</span>
+          {/* Highlights - Two columns */}
+          <div className="grid sm:grid-cols-2 gap-6 mb-10 animate-fade-up delay-300">
+            {/* Compliance */}
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-accent mb-3">
+                <Shield className="w-4 h-4" />
+                <span className="text-sm font-semibold uppercase tracking-wide">Compliance</span>
               </div>
-            ))}
+              {complianceHighlights.map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-2 text-primary-foreground/80"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-accent" />
+                  <span className="text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
+            {/* Marketing */}
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-highlight mb-3">
+                <Megaphone className="w-4 h-4" />
+                <span className="text-sm font-semibold uppercase tracking-wide">Marketing</span>
+              </div>
+              {marketingHighlights.map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-2 text-primary-foreground/80"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-highlight" />
+                  <span className="text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* CTAs */}
