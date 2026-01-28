@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, Calendar, Rocket, Shield } from "lucide-react";
+import { Phone, Mail, Rocket, Shield } from "lucide-react";
 
 const FinalCTA = () => {
   return (
@@ -19,12 +19,15 @@ const FinalCTA = () => {
           fully compliant. Focus on scaling—we'll handle the rest.
         </p>
 
+        <h3 className="font-display text-2xl font-semibold text-foreground mb-6">
+          Contact Us
+        </h3>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="hero" size="xl" asChild>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <Calendar className="w-5 h-5" />
-              Schedule a Call
-              <ArrowRight className="w-5 h-5" />
+            <a href="mailto:info@ecoreadvisory.com">
+              <Mail className="w-5 h-5" />
+              info@ecoreadvisory.com
             </a>
           </Button>
           <Button variant="outline" size="xl" className="border-2" asChild>
