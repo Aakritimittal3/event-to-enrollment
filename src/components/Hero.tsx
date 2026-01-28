@@ -18,7 +18,7 @@ const Hero = () => {
       {/* Gradient orb */}
       <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
 
-      <div className="container-wide relative z-10 py-32 md:py-40">
+      <div className="container-wide relative z-10 py-20 md:py-28">
         <div className="max-w-3xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground/80 text-sm font-medium mb-6 animate-fade-up">
