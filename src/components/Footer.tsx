@@ -27,13 +27,6 @@ const Footer = () => {
               <Mail className="w-4 h-4" />
               info@ecoreadvisory.com
             </a>
-            <a
-              href="tel:+919876543210"
-              className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              +91-98765-43210
-            </a>
           </div>
 
           {/* Location */}
