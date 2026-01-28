@@ -1,4 +1,4 @@
-import { Lightbulb, Zap, Heart, Shield, Users, Rocket, ArrowRight } from "lucide-react";
+import { Lightbulb, Zap, Heart, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const coreValues = [
@@ -16,24 +16,6 @@ const coreValues = [
     icon: Heart,
     title: "Integrity",
     description: "We approach your compliance with the same rigor we'd apply to our own business, and we measure our success by your growth.",
-  },
-];
-
-const advantages = [
-  {
-    icon: Shield,
-    title: "Comprehensive Protection",
-    description: "When we build your brand, we simultaneously secure your intellectual property rights",
-  },
-  {
-    icon: Rocket,
-    title: "B2B Lifecycle Support",
-    description: "We guide you through every milestone—from initial business registration to your first industry event participation",
-  },
-  {
-    icon: Users,
-    title: "Founder-Led Service",
-    description: "You benefit from strategies rooted in real-world marketing experience and deep knowledge of Indian regulatory frameworks",
   },
 ];
 
@@ -74,30 +56,19 @@ const AboutUs = () => {
           <h3 className="font-display text-2xl font-bold text-foreground mb-4 text-center">
             Why Partner With Us?
           </h3>
-          <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-10">
-            Most firms specialize in either marketing or legal services. Lawyers typically don't understand brand positioning, while marketing agencies rarely grasp the nuances of labor law and compliance requirements.
-          </p>
-          <p className="text-lg text-foreground font-medium text-center mb-10">
-            Our integrated approach offers distinct advantages:
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {advantages.map((advantage) => (
-              <div
-                key={advantage.title}
-                className="p-6 rounded-xl border border-border bg-card hover:shadow-md hover:border-accent/30 transition-all duration-300"
-              >
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                  <advantage.icon className="w-6 h-6 text-accent" />
-                </div>
-                <h4 className="font-display text-lg font-semibold text-foreground mb-2">
-                  {advantage.title}
-                </h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {advantage.description}
-                </p>
-              </div>
-            ))}
+          <div className="space-y-4 text-muted-foreground text-center max-w-3xl mx-auto">
+            <p>
+              Most firms specialize in either marketing or legal services. Lawyers typically don't understand brand positioning, while marketing agencies rarely grasp the nuances of labor law and compliance requirements.
+            </p>
+            <p>
+              We bring together the best of both worlds—combining strategic marketing expertise with deep regulatory knowledge to deliver a truly integrated service experience.
+            </p>
+            <p>
+              When you partner with us, you get a dedicated team that understands your business holistically. We don't just solve problems in isolation; we ensure that your marketing initiatives and compliance obligations work together seamlessly.
+            </p>
+            <p className="text-foreground font-medium">
+              From protecting your brand identity to ensuring your workforce is fully compliant, we've got you covered at every step of your growth journey.
+            </p>
           </div>
         </div>
 
