@@ -1,4 +1,4 @@
-import { Shield, TrendingUp, Clock, Award } from "lucide-react";
+import { Shield, TrendingUp, Clock, Megaphone, Users, Target } from "lucide-react";
 
 const results = [
   {
@@ -8,22 +8,22 @@ const results = [
     description: "Clients achieve full statutory compliance",
   },
   {
-    icon: TrendingUp,
-    stat: "₹0",
-    label: "Penalties",
-    description: "Zero penalties for managed clients",
-  },
-  {
     icon: Clock,
     stat: "90%",
     label: "Time Saved",
     description: "Reduction in compliance management effort",
   },
   {
-    icon: Award,
-    stat: "100%",
-    label: "Audit Success",
-    description: "Perfect record in government inspections",
+    icon: Megaphone,
+    stat: "3x",
+    label: "Brand Visibility",
+    description: "Average increase in B2B brand awareness",
+  },
+  {
+    icon: Target,
+    stat: "40%",
+    label: "Lead Growth",
+    description: "Boost in qualified lead generation",
   },
 ];
 
@@ -47,7 +47,7 @@ const Results = () => {
             Results You Can Expect
           </h2>
           <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto">
-            Our clients experience peace of mind and measurable compliance improvements
+            Our clients experience peace of mind, compliance improvements, and measurable marketing growth
           </p>
         </div>
 
