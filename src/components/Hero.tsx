@@ -35,7 +35,7 @@ const Hero = () => {
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-primary-foreground/70 mb-8 leading-relaxed max-w-2xl animate-fade-up delay-200">
             We help SMEs across India scale their business through strategic marketing 
-            while ensuring complete regulatory compliance—so you can focus on growth 
+            while ensuring complete regulatory compliance, so you can focus on growth 
             without worrying about legal risks.
           </p>
 
