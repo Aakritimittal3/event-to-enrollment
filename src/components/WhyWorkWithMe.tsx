@@ -24,7 +24,7 @@ const reasons = [
   {
     icon: Handshake,
     title: "Flexible Engagement",
-    description: "No long contracts — monthly retainers that work for you",
+    description: "No long contracts, monthly retainers that work for you",
   },
   {
     icon: HeartHandshake,

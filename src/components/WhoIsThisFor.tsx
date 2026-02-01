@@ -48,7 +48,7 @@ const WhoIsThisFor = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             If regulatory complexity is slowing your growth or exposing you to
-            risks — we're here to help.
+            risks, we're here to help.
           </p>
         </div>
 

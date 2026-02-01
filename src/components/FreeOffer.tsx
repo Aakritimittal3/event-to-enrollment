@@ -33,7 +33,7 @@ const FreeOffer = () => {
 
               <p className="text-muted-foreground mb-6">
                 Discover your compliance gaps, risk exposure, and get a clear
-                roadmap to full compliance — absolutely free.
+                roadmap to full compliance, absolutely free.
               </p>
 
               <div className="mb-8">

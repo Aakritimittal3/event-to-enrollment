@@ -25,7 +25,7 @@ const Problem = () => {
             Growing Pains That Hold SMEs Back
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Most businesses struggle to balance growth with governance—leaving them vulnerable on both fronts.
+            Most businesses struggle to balance growth with governance, leaving them vulnerable on both fronts.
           </p>
         </div>
 

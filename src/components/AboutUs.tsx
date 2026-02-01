@@ -5,7 +5,7 @@ const coreValues = [
   {
     icon: Lightbulb,
     title: "Clarity",
-    description: "We communicate in plain language. No legal jargon or marketing buzzwords—just clear, actionable guidance.",
+    description: "We communicate in plain language. No legal jargon or marketing buzzwords, just clear, actionable guidance.",
   },
   {
     icon: Zap,
@@ -40,7 +40,7 @@ const AboutUs = () => {
           </h3>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>
-              In today's B2B world, companies face a constant challenge: balancing aggressive growth with robust governance. On one hand, there's the push to scale—building a compelling brand, defining your ideal customer profile, and executing high-impact marketing. On the other, there's the critical need for compliance—navigating labor laws, securing environmental approvals, and protecting intellectual property rights.
+              In today's B2B world, companies face a constant challenge: balancing aggressive growth with robust governance. On one hand, there's the push to scale, building a compelling brand, defining your ideal customer profile, and executing high-impact marketing. On the other, there's the critical need for compliance, navigating labor laws, securing environmental approvals, and protecting intellectual property rights.
             </p>
             <p>
               Our firm was founded to bridge this gap. With one founder bringing deep marketing expertise and the other combining legal advocacy with extensive compliance experience, we recognized a fundamental truth: <span className="text-foreground font-medium">marketing strategies only succeed when built on a solid legal foundation</span>. You cannot confidently promote a brand that isn't legally protected, nor can you scale a workforce that isn't compliant with regulations.
@@ -61,7 +61,7 @@ const AboutUs = () => {
               Most firms specialize in either marketing or legal services. Lawyers typically don't understand brand positioning, while marketing agencies rarely grasp the nuances of labor law and compliance requirements.
             </p>
             <p>
-              We bring together the best of both worlds—combining strategic marketing expertise with deep regulatory knowledge to deliver a truly integrated service experience.
+              We bring together the best of both worlds, combining strategic marketing expertise with deep regulatory knowledge to deliver a truly integrated service experience.
             </p>
             <p>
               When you partner with us, you get a dedicated team that understands your business holistically. We don't just solve problems in isolation; we ensure that your marketing initiatives and compliance obligations work together seamlessly.

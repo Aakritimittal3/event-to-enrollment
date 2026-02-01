@@ -16,7 +16,7 @@ const FinalCTA = () => {
         </h2>
         <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
           Grow your business with strategic marketing while we ensure you stay 
-          fully compliant. Focus on scaling—we'll handle the rest.
+          fully compliant. Focus on scaling, we'll handle the rest.
         </p>
 
         <h3 className="font-display text-2xl font-semibold text-foreground mb-6">
