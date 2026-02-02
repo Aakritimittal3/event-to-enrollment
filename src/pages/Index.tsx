@@ -10,17 +10,19 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <>
       <Header />
-      <Hero />
-      <WhoIsThisFor />
-      <Problem />
-      <Services />
-      <AboutUs />
-      <Results />
-      <FinalCTA />
+      <main className="min-h-screen" role="main">
+        <Hero />
+        <WhoIsThisFor />
+        <Problem />
+        <Services />
+        <AboutUs />
+        <Results />
+        <FinalCTA />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 };
 
