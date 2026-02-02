@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
             Grow with Confidence,{" "}
             <span className="text-gradient">Stay Compliant</span>
           </h1>
