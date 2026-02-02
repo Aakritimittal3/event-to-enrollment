@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,13 +8,26 @@ const NotFound = () => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
   }, [location.pathname]);
 
+  // SEO: noindex 404 page and set title
+  useEffect(() => {
+    const prevTitle = document.title;
+    document.title = "404 | Ecore Advisory";
+    let metaRobots = document.querySelector('meta[name="robots"]');
+    const prevContent = metaRobots?.getAttribute("content") ?? "";
+    if (!metaRobots) {
+      metaRobots = document.createElement("meta");
+      metaRobots.setAttribute("name", "robots");
+      document.head.appendChild(metaRobots);
+    }
+    metaRobots.setAttribute("content", "noindex, nofollow");
+    return () => {
+      document.title = prevTitle;
+      metaRobots?.setAttribute("content", prevContent);
+    };
+  }, []);
+
   return (
-    <>
-      <Helmet>
-        <title>404 | Ecore Advisory</title>
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
-      <div id="main-content" className="flex min-h-screen items-center justify-center bg-muted" role="main">
+    <div id="main-content" className="flex min-h-screen items-center justify-center bg-muted" role="main">
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
         <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
@@ -24,7 +36,6 @@ const NotFound = () => {
         </a>
       </div>
     </div>
-    </>
   );
 };
 
