@@ -98,16 +98,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <h3 className="font-display text-2xl font-bold text-foreground mb-6">
-            Ready to Build a Business Built to Last?
-          </h3>
-          <Button size="lg" className="gap-2">
-            Meet With Our Team
-            <ArrowRight className="w-4 h-4" />
-          </Button>
-        </div>
       </div>
     </section>
   );
