@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <>
       <Header />
-      <main className="min-h-screen" role="main">
+      <main id="main-content" className="min-h-screen" role="main">
         <Hero />
         <WhoIsThisFor />
         <Problem />

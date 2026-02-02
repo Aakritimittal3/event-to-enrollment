@@ -31,7 +31,7 @@ const Header = () => {
     >
       <div className="container-wide flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2" aria-label="Ecore Advisory - Home">
           <Shield className="w-7 h-7 text-accent" />
           <span className="font-display text-xl font-bold text-accent">
             Ecore Advisory
@@ -39,7 +39,7 @@ const Header = () => {
         </a>
 
         {/* Desktop Navigation - Centered */}
-        <nav className="hidden md:flex items-center justify-center flex-1 gap-8">
+        <nav className="hidden md:flex items-center justify-center flex-1 gap-8" aria-label="Main navigation">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -67,7 +67,7 @@ const Header = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-card border-t border-border animate-fade-in">
-          <nav className="container-wide py-4 flex flex-col gap-4">
+          <nav className="container-wide py-4 flex flex-col gap-4" aria-label="Main navigation">
             {navLinks.map((link) => (
               <a
                 key={link.label}

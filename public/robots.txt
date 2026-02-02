@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://enroll-auto-pilot.lovable.app/sitemap.xml
+# Sitemap (canonical domain)
+Sitemap: https://www.ecoreadvisory.com/sitemap.xml
