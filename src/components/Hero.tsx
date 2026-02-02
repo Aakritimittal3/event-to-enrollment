@@ -3,7 +3,7 @@ import { ArrowRight, Shield } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
       {/* Subtle pattern overlay */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
+          <h1 id="hero-heading" className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
             Grow with Confidence,{" "}
             <span className="text-gradient">Stay Compliant</span>
           </h1>
