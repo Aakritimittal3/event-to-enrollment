@@ -43,7 +43,7 @@ const AboutUs = () => {
               In today's B2B world, companies face a constant challenge: balancing aggressive growth with robust governance. On one hand, there's the push to scale, building a compelling brand, defining your ideal customer profile, and executing high-impact marketing. On the other, there's the critical need for compliance, navigating labor laws, securing environmental approvals, and protecting intellectual property rights.
             </p>
             <p>
-              Our firm was founded to bridge this gap. With one founder bringing deep marketing expertise and the other combining legal advocacy with extensive compliance experience, we recognized a fundamental truth: <span className="text-foreground font-medium">marketing strategies only succeed when built on a solid legal foundation</span>. You cannot confidently promote a brand that isn't legally protected, nor can you scale a workforce that isn't compliant with regulations.
+              Our firm was founded to solve this problem. With founders bringing combined expertise in business, marketing, strategy and legal compliance, we recognized what most businesses miss: <span className="text-foreground font-medium">growth and governance aren't separate — they're interdependent</span>. You cannot confidently promote a brand without legal protection, nor scale operations without regulatory compliance.
             </p>
             <p>
               We established this firm to be more than just another service provider. We're a <span className="text-foreground font-medium">strategic partner</span> who secures your business foundation while helping you expand your market reach.
