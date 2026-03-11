@@ -4,7 +4,7 @@ const coreValues = [
   {
     icon: Lightbulb,
     title: "Clarity",
-    description: "We communicate in plain language. No legal jargon — just clear, actionable guidance.",
+    description: "We communicate in plain language. No legal jargon, just clear, actionable guidance.",
   },
   {
     icon: Zap,
