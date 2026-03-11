@@ -1,21 +1,20 @@
-import { Lightbulb, Zap, Heart, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Lightbulb, Zap, Heart } from "lucide-react";
 
 const coreValues = [
   {
     icon: Lightbulb,
     title: "Clarity",
-    description: "We communicate in plain language. No legal jargon or marketing buzzwords, just clear, actionable guidance.",
+    description: "We communicate in plain language. No legal jargon — just clear, actionable guidance.",
   },
   {
     icon: Zap,
     title: "Agility",
-    description: "We operate at startup speed, adapting quickly to your evolving needs as a growing SME.",
+    description: "We operate at startup speed, adapting quickly to your evolving compliance needs as a growing SME.",
   },
   {
     icon: Heart,
     title: "Integrity",
-    description: "We approach your compliance with the same rigor we'd apply to our own business, and we measure our success by your growth.",
+    description: "We approach your compliance with the same rigor we'd apply to our own business, and we measure our success by your peace of mind.",
   },
 ];
 
@@ -29,7 +28,7 @@ const AboutUs = () => {
             About Us
           </span>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Where Strategy Meets Security
+            Your Trusted Compliance Partner
           </h2>
         </div>
 
@@ -40,13 +39,13 @@ const AboutUs = () => {
           </h3>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>
-              In today's B2B world, companies face a constant challenge: balancing aggressive growth with robust governance. On one hand, there's the push to scale, building a compelling brand, defining your ideal customer profile, and executing high-impact marketing. On the other, there's the critical need for compliance, navigating labor laws, securing environmental approvals, and protecting intellectual property rights.
+              In today's business landscape, companies face a constant challenge: staying compliant with ever-changing regulations while focusing on growth. Navigating labor laws, securing environmental approvals, protecting intellectual property, and managing statutory requirements can overwhelm even the most capable teams.
             </p>
             <p>
-              Our firm was founded to solve this problem. With founders bringing combined expertise in business, marketing, strategy and legal compliance, we recognized what most businesses miss: <span className="text-foreground font-medium">growth and governance aren't separate — they're interdependent</span>. You cannot confidently promote a brand without legal protection, nor scale operations without regulatory compliance.
+              Our firm was founded to solve this problem. With founders bringing combined expertise in business, strategy, and legal compliance, we recognized what most businesses miss: <span className="text-foreground font-medium">growth and governance aren't separate — they're interdependent</span>. You cannot confidently scale operations without regulatory compliance.
             </p>
             <p>
-              We established this firm to be more than just another service provider. We're a <span className="text-foreground font-medium">strategic partner</span> who secures your business foundation while helping you expand your market reach.
+              We established this firm to be more than just another service provider. We're a <span className="text-foreground font-medium">strategic compliance partner</span> who secures your business foundation so you can focus on what you do best.
             </p>
           </div>
         </div>
@@ -58,16 +57,16 @@ const AboutUs = () => {
           </h3>
           <div className="space-y-4 text-muted-foreground text-center max-w-3xl mx-auto">
             <p>
-              Most firms specialize in either marketing or legal services. Lawyers typically don't understand brand positioning, while marketing agencies rarely grasp the nuances of labor law and compliance requirements.
+              Most compliance firms take a reactive approach — fixing problems after they arise. We take a proactive stance, ensuring your business stays ahead of regulatory changes and deadlines.
             </p>
             <p>
-              We bring together the best of both worlds, combining strategic marketing expertise with deep regulatory knowledge to deliver a truly integrated service experience.
+              We bring deep regulatory knowledge across labour laws, environmental regulations, IPR, building codes, fire safety, and legal metrology to deliver a truly comprehensive compliance experience.
             </p>
             <p>
-              When you partner with us, you get a dedicated team that understands your business holistically. We don't just solve problems in isolation; we ensure that your marketing initiatives and compliance obligations work together seamlessly.
+              When you partner with us, you get a dedicated team that understands your business holistically. We don't just solve problems in isolation; we ensure all your compliance obligations work together seamlessly.
             </p>
             <p className="text-foreground font-medium">
-              From protecting your brand identity to ensuring your workforce is fully compliant, we've got you covered at every step of your growth journey.
+              From protecting your intellectual property to ensuring your workforce is fully compliant, we've got you covered at every step of your growth journey.
             </p>
           </div>
         </div>

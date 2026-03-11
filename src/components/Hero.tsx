@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground/80 text-sm font-medium mb-6 animate-fade-up">
             <Shield className="w-4 h-4 text-accent" />
-            Trusted Business Partner
+            Trusted Compliance Partner
           </div>
 
           {/* Headline */}
@@ -34,11 +34,10 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-primary-foreground/70 mb-8 leading-relaxed max-w-2xl animate-fade-up delay-200">
-            We help SMEs across India scale their business through strategic marketing 
-            while ensuring complete regulatory compliance, so you can focus on growth 
+            We help SMEs across India navigate complex regulatory requirements 
+            with expert compliance management, so you can focus on growth 
             without worrying about legal risks.
           </p>
-
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up delay-400">
