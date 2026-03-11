@@ -57,7 +57,7 @@ const AboutUs = () => {
           </h3>
           <div className="space-y-4 text-muted-foreground text-center max-w-3xl mx-auto">
             <p>
-              Most compliance firms take a reactive approach — fixing problems after they arise. We take a proactive stance, ensuring your business stays ahead of regulatory changes and deadlines.
+              Most compliance firms take a reactive approach, fixing problems after they arise. We take a proactive stance, ensuring your business stays ahead of regulatory changes and deadlines.
             </p>
             <p>
               We bring deep regulatory knowledge across labour laws, environmental regulations, IPR, building codes, fire safety, and legal metrology to deliver a truly comprehensive compliance experience.
