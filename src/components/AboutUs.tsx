@@ -42,7 +42,7 @@ const AboutUs = () => {
               In today's business landscape, companies face a constant challenge: staying compliant with ever-changing regulations while focusing on growth. Navigating labor laws, securing environmental approvals, protecting intellectual property, and managing statutory requirements can overwhelm even the most capable teams.
             </p>
             <p>
-              Our firm was founded to solve this problem. With founders bringing combined expertise in business, strategy, and legal compliance, we recognized what most businesses miss: <span className="text-foreground font-medium">growth and governance aren't separate — they're interdependent</span>. You cannot confidently scale operations without regulatory compliance.
+              Our firm was founded to solve this problem. With founders bringing combined expertise in business, strategy, and legal compliance, we recognized what most businesses miss: <span className="text-foreground font-medium">growth and governance aren't separate, they're interdependent</span>. You cannot confidently scale operations without regulatory compliance.
             </p>
             <p>
               We established this firm to be more than just another service provider. We're a <span className="text-foreground font-medium">strategic compliance partner</span> who secures your business foundation so you can focus on what you do best.
