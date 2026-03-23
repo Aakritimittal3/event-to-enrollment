@@ -8,7 +8,7 @@ const complianceServices = [
   { name: "Electrical & Fire Safety", icon: Zap },
   { name: "Legal Metrology", icon: Gauge },
   { name: "CTE/CTO", icon: Briefcase },
-  { name: "CLU (Change of Land Use)", icon: MapPin },
+  { name: "CLU etc.", icon: MapPin },
 ];
 
 const Services = () => {
