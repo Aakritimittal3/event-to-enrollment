@@ -1,4 +1,4 @@
-import { Shield, Users, Leaf, Scale, Building2, Zap, Gauge, Briefcase, Check } from "lucide-react";
+import { Shield, Users, Leaf, Scale, Building2, Zap, Gauge, Briefcase, MapPin, Check } from "lucide-react";
 
 const complianceServices = [
   { name: "Labour Compliances", icon: Users },
@@ -8,6 +8,7 @@ const complianceServices = [
   { name: "Electrical & Fire Safety", icon: Zap },
   { name: "Legal Metrology", icon: Gauge },
   { name: "CTE/CTO", icon: Briefcase },
+  { name: "CLU (Change of Land Use)", icon: MapPin },
 ];
 
 const Services = () => {
