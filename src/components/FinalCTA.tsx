@@ -1,7 +1,34 @@
-import { Button } from "@/components/ui/button";
+import { useEffect, useRef } from "react";
 import { Phone, Mail, Shield } from "lucide-react";
 
 const FinalCTA = () => {
+  const formRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!formRef.current) return;
+
+    const el = document.createElement("div");
+    el.className = "hs-form-frame";
+    el.setAttribute("data-region", "na2");
+    el.setAttribute("data-form-id", "ba8b9a43-9a87-4900-b8bc-9ff540ce5256");
+    el.setAttribute("data-portal-id", "245883431");
+    formRef.current.appendChild(el);
+
+    // Re-trigger HubSpot's scanner so it picks up the newly added element
+    if ((window as any).hbspt?.forms?.create) {
+      (window as any).hbspt.forms.create({
+        region: "na2",
+        portalId: "245883431",
+        formId: "ba8b9a43-9a87-4900-b8bc-9ff540ce5256",
+        target: `#hs-contact-form`,
+      });
+    }
+
+    return () => {
+      if (formRef.current) formRef.current.innerHTML = "";
+    };
+  }, []);
+
   return (
     <section id="contact" className="section-padding bg-gradient-subtle">
       <div className="container-narrow text-center">
@@ -21,22 +48,29 @@ const FinalCTA = () => {
           Contact Us
         </h3>
 
+        <div
+          id="hs-contact-form"
+          ref={formRef}
+          className="max-w-xl mx-auto text-left mb-10"
+        />
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="hero" size="xl" asChild>
-            <a href="mailto:info@ecoreadvisory.com">
-              <Mail className="w-5 h-5" />
-              info@ecoreadvisory.com
-            </a>
-          </Button>
-          <Button variant="outline" size="xl" className="border-2" asChild>
-            <a href="tel:+917404775788">
-              <Phone className="w-5 h-5" />
-              Call: +91-7404775788
-            </a>
-          </Button>
+          <a
+            href="mailto:info@ecoreadvisory.com"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Mail className="w-4 h-4" />
+            info@ecoreadvisory.com
+          </a>
+          <a
+            href="tel:+917404775788"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Phone className="w-4 h-4" />
+            +91-7404775788
+          </a>
         </div>
 
-        {/* Taglines */}
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-muted-foreground">
           <span className="text-sm italic">"Ensuring Compliance, Enabling Growth."</span>
           <span className="text-sm italic">"Your Partner in Regulatory Governance."</span>
