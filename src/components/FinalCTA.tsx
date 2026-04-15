@@ -1,26 +1,28 @@
-import { useState, FormEvent } from "react";
+import { useState, useRef, FormEvent } from "react";
 import { Phone, Mail, Shield, Send } from "lucide-react";
-
-const FORMSPREE_URL = "https://formspree.io/f/xojyvgpn";
 
 const FinalCTA = () => {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("submitting");
 
-    const data = new FormData(e.currentTarget);
+    const form = formRef.current;
+    if (!form) return;
+
+    const data = new FormData(form);
 
     try {
-      const res = await fetch(FORMSPREE_URL, {
+      const res = await fetch("https://formspree.io/f/xojyvgpn", {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
       });
       if (res.ok) {
         setStatus("success");
-        e.currentTarget.reset();
+        form.reset();
       } else {
         setStatus("error");
       }
@@ -35,12 +37,12 @@ const FinalCTA = () => {
         <div className="inline-flex items-center gap-3 justify-center mb-6">
           <Shield className="w-6 h-6 text-accent" />
         </div>
-        
+
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
           Ready for Worry-Free Compliance?
         </h2>
         <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-          Let us handle your regulatory compliance so you can focus on growing 
+          Let us handle your regulatory compliance so you can focus on growing
           your business without legal risks.
         </p>
 
@@ -49,6 +51,7 @@ const FinalCTA = () => {
         </h3>
 
         <form
+          ref={formRef}
           onSubmit={handleSubmit}
           className="max-w-xl mx-auto text-left mb-10 space-y-4"
         >
@@ -92,10 +95,14 @@ const FinalCTA = () => {
             </button>
           </div>
           {status === "success" && (
-            <p className="text-center text-sm text-green-600">Thanks! We'll get back to you shortly.</p>
+            <p className="text-center text-sm text-green-600">
+              Thanks! We'll get back to you shortly.
+            </p>
           )}
           {status === "error" && (
-            <p className="text-center text-sm text-red-600">Something went wrong. Please try again.</p>
+            <p className="text-center text-sm text-red-600">
+              Something went wrong. Please try again.
+            </p>
           )}
         </form>
 
