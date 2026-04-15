@@ -1,33 +1,33 @@
-import { useEffect, useRef } from "react";
-import { Phone, Mail, Shield } from "lucide-react";
+import { useState, FormEvent } from "react";
+import { Phone, Mail, Shield, Send } from "lucide-react";
+
+const FORMSPREE_URL = "https://formspree.io/f/xojyvgpn";
 
 const FinalCTA = () => {
-  const formRef = useRef<HTMLDivElement>(null);
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  useEffect(() => {
-    if (!formRef.current) return;
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("submitting");
 
-    const el = document.createElement("div");
-    el.className = "hs-form-frame";
-    el.setAttribute("data-region", "na2");
-    el.setAttribute("data-form-id", "ba8b9a43-9a87-4900-b8bc-9ff540ce5256");
-    el.setAttribute("data-portal-id", "245883431");
-    formRef.current.appendChild(el);
+    const data = new FormData(e.currentTarget);
 
-    // Re-trigger HubSpot's scanner so it picks up the newly added element
-    if ((window as any).hbspt?.forms?.create) {
-      (window as any).hbspt.forms.create({
-        region: "na2",
-        portalId: "245883431",
-        formId: "ba8b9a43-9a87-4900-b8bc-9ff540ce5256",
-        target: `#hs-contact-form`,
+    try {
+      const res = await fetch(FORMSPREE_URL, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
       });
+      if (res.ok) {
+        setStatus("success");
+        e.currentTarget.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
     }
-
-    return () => {
-      if (formRef.current) formRef.current.innerHTML = "";
-    };
-  }, []);
+  };
 
   return (
     <section id="contact" className="section-padding bg-gradient-subtle">
@@ -48,11 +48,56 @@ const FinalCTA = () => {
           Contact Us
         </h3>
 
-        <div
-          id="hs-contact-form"
-          ref={formRef}
-          className="max-w-xl mx-auto text-left mb-10"
-        />
+        <form
+          onSubmit={handleSubmit}
+          className="max-w-xl mx-auto text-left mb-10 space-y-4"
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              className="w-full rounded-md border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+              className="w-full rounded-md border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+            />
+          </div>
+          <input
+            type="text"
+            name="company"
+            placeholder="Company Name"
+            className="w-full rounded-md border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+          />
+          <textarea
+            name="message"
+            placeholder="How can we help you?"
+            rows={4}
+            required
+            className="w-full rounded-md border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent resize-none"
+          />
+          <div className="text-center">
+            <button
+              type="submit"
+              disabled={status === "submitting"}
+              className="inline-flex items-center gap-2 rounded-md bg-accent px-6 py-3 font-semibold text-white hover:bg-accent/90 transition-colors disabled:opacity-60"
+            >
+              <Send className="w-4 h-4" />
+              {status === "submitting" ? "Sending…" : "Send Message"}
+            </button>
+          </div>
+          {status === "success" && (
+            <p className="text-center text-sm text-green-600">Thanks! We'll get back to you shortly.</p>
+          )}
+          {status === "error" && (
+            <p className="text-center text-sm text-red-600">Something went wrong. Please try again.</p>
+          )}
+        </form>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
